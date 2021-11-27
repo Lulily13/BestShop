@@ -13,6 +13,7 @@
     --font-weight-light: 300;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --standard-font-size: 16px;
 }
 
@@ -119,3 +120,99 @@ h1 {
     cursor: pointer;
 }
 
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-white,white);
+}
+
+h2 {
+    font-family: var(--Raleway-font,sans-serif);
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--color-black,black);
+    letter-spacing: 0;
+    margin: 100px 0 101px 0;
+}
+
+.stats__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 121px 0;
+}
+
+.stats__container__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box--daily-entries {
+    margin: 0 185px 0 0;
+}
+
+.box--seen-products {
+    margin: 0 185px 0 0;
+}
+
+.box--added-posts {
+
+}
+
+.circle {
+    height: 63px;
+    width: 63px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 0 13px 0;
+}
+
+.circle--one {
+    background-color: var(--color-redish,#FB3B64);
+}
+
+.circle--two {
+    background-color: var(--color-primary,#08A6E4);
+}
+
+.circle--three {
+    background-color: var(--color-green,#55DFB4);
+}
+
+.number {
+    font-family: var(--Raleway-font,sans-serif);
+    font-weight: var(--font-weight-extrabold,800);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 6px;
+    margin: 0 0 19px 0;
+}
+
+.box__description {
+    font-family: var(--Raleway-font,sans-serif);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--color-grey,#A5A5A5);
+}
+
+.icon1 {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+}
+
+.icon2 {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.icon3 {
+    position: absolute;
+    top: 8px;
+    left: 28px;
+}
