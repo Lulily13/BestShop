@@ -12,6 +12,8 @@
     --color-grey2: #00000029;
     --font-weight-light: 300;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --standard-font-size: 16px;
 }
 
 * {
@@ -67,5 +69,53 @@ header > .container {
     color: var(--color-black,black);
     cursor: pointer;
     border-bottom: 4px solid var(--color-primary,#08A6E4);
+}
+
+.opening-section {
+    height: 712px;
+    background-image: url("../assets/Background.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 130px 0 0 0;
+}
+
+h1 {
+    font-family: var(--Raleway-font);
+    font-size: 49px;
+    color: var(--color-black,black);
+    padding: 0 0 20px 0;
+    line-height: 57px;
+}
+
+.opening-section > p {
+    font-family: var(--OpenSans-font,sans-serif);
+    font-size: var(--standard-font-size,16px);
+    color: var(--color-black,black);
+    padding: 0 0 38px 0;
+    line-height: 22px;
+}
+
+.opening-section > a {
+    text-decoration: none;
+    font-family: var(--OpenSans-font,sans-serif);
+    font-size: var(--standard-font-size,16px);
+    font-weight: var(--font-weight-bold,700);
+    color: var(--color-white,white);
+    background-color: var(--color-primary,#08A6E4);
+    padding: 22px 157px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 22px;
+}
+
+.opening-section > a:hover {
+    cursor: pointer;
 }
 
