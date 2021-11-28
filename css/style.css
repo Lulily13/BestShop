@@ -219,9 +219,10 @@ h2 {
 
 .benefits {
     background-color: var(--color-light-grey, #F7F7F7);
+    height: 1395px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -232,26 +233,38 @@ h2 {
     display: flex;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+    padding: 91px 35px;
 }
 
 .benefits--box1 {
-    margin: 105px 0 37px 0;
-}
-
-.benefits--box2 {
-    margin: 0 0 37px 0;
-    display: flex;
-}
-
-.benefits--box3 {
-    margin: 0 0 105px 0;
-    background-color: var(--color-light-grey, #F7F7F7);
-    border: none;
     display: flex;
     justify-content: space-between;
 }
 
+.benefits--box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits--box3 {
+    background-color: var(--color-light-grey, #F7F7F7);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.benefits--box--container {
+    position: relative;
+}
+
+.benefits__description {
+    width: 40%;
+}
+
+
 .benefits__description_h1 {
+    width: 60%;
     font-family: var(--Raleway-font,sans-serif);
     font-size: 36px;
     line-height: 42px;
@@ -263,24 +276,35 @@ h2 {
     font-size: var(--standard-font-size);
     line-height: 22px;
     text-align: left;
+    width: 80%;
 }
 
 .benefits--laptop {
     width: 386px;
     height: 219px;
+    z-index: 1;
+    position: absolute;
 }
 
 .benefits__figure1 {
-    width: 255px;
-    height: 255px;
+    width: 200px;
+    height: 200px;
     background-color: var(--color-redish,deeppink);
     border-radius: 41px;
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    z-index: 0;
+    top: -47px;
+    left: 183px;
 }
 
 .benefits--phone {
     width: 426px;
     height: 328px;
+    position: absolute;
+    top: -54px;
+    left: 3px;
+    z-index: 1;
 }
 
 .benefits__figure2 {
@@ -288,14 +312,19 @@ h2 {
     height: 320px;
     background-color: var(--color-primary, #08A6E4);
     border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -70px;
+    left: 3px;
 }
 
-.text-container {
+.description-box3 {
     background-color: var(--color-white,white);
     width: 623px;
     height: 370px;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+    margin: 0;
 }
 
 .image-container {
@@ -313,4 +342,15 @@ h2 {
     width: 296px;
     height: 208px;
 }
+
+.h1-box3 {
+    margin: 70px 0 0 35px;
+}
+
+.p-box3 {
+    margin: 0 36px;
+}
+
+
+
 
