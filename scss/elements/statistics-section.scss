@@ -1,0 +1,87 @@
+@import "scss/settings/variables";
+@import "scss/settings/mixins";
+
+.stats {
+  @include flexCenter;
+  @include flexColumn;
+}
+
+h2 {
+  font-family: $basic-font-family1;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 100px 0 101px 0;
+}
+
+.stats__container {
+  @include flexCenter;
+  margin: 0 0 121px 0;
+  &__box {
+    @include flexCenter;
+    @include flexColumn;
+  }
+}
+
+.box--daily-entries {
+  margin: 0 185px 0 0;
+}
+
+.box--seen-products {
+  margin: 0 185px 0 0;
+}
+
+.circle {
+  height: 63px;
+  width: 63px;
+  border-radius: $circle-border-radius;
+  position: relative;
+  margin: 0 0 13px 0;
+}
+
+.circle--one {
+  background-color: $color-redish;
+}
+
+.circle--two {
+  background-color: $color-primary;
+}
+
+.circle--three {
+  background-color: $color-green;
+}
+
+.stats__container__box {
+  .number {
+    font-family: $basic-font-family1;
+    font-weight: $font-weight-bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 6px;
+    margin: 0 0 19px 0;
+  }
+  .box__description {
+    font-family: $basic-font-family1;
+    font-size: 17px;
+    line-height: 20px;
+    color: $color-grey;
+  }
+}
+
+.icons {
+  position: absolute;
+}
+
+.icon1 {
+  top: 2px;
+  left: 30px;
+}
+
+.icon2 {
+  top: 15px;
+  left: 25px;
+}
+
+.icon3 {
+  top: 8px;
+  left: 28px;
+}

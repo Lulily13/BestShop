@@ -10,3 +10,14 @@
 
 @import "settings/variables";
 @import "settings/mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-black;
+  font-size: 16px;
+  background-color: $background-primary-color;
+}
+

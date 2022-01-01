@@ -1,0 +1,45 @@
+@import "scss/settings/mixins";
+@import "scss/settings/variables.scss";
+
+header {
+  width: $width-secondary;
+  box-shadow: 0 3px 6px $color-grey2;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: $width-secondary;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-primary-color;
+    margin: 0 136px;
+  }
+}
+
+.logo {
+  color: $color-primary;
+  font-family: $basic-font-family1;
+  font-size: 32px;
+  padding: 16px 0 17px 0;
+  font-weight: $font-weight-light;
+}
+
+.header__menu {
+  @include flexCenter;
+}
+
+.header__menu__element {
+  height: 70px;
+  color: $color-grey;
+  font-family: $basic-font-family2;
+  font-size: 11px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 3.28px;
+  margin: 0 52px;
+  @include flexCenter;
+  &:hover {
+    color: $color-black;
+    cursor: $basic-cursor;
+    border-bottom: 4px solid $color-primary;
+  }
+}
