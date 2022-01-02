@@ -4,52 +4,45 @@
 footer {
   box-shadow: 0px -5px 40px #00000029;
   height: 89px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  @include flexCenter;
 }
 
 .footer__content {
-  display: flex;
+  @include flexCenter;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: 0 137px;
 }
 
 .footer__logo {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
+  &_text {
+    font-family: $basic-font-family1;
+    font-weight: $font-weight-light;
+    font-size: 26px;
+    line-height: 30px;
+    color: $color-primary;
+  }
+  &__info {
+    font-family: $basic-font-family2;
+    font-size: 11px;
+    line-height: 15px;
+    color: $color-grey;
+  }
 }
 
 .footer__links {
   display: flex;
   gap: 20px;
-}
-
-.footer__logo_text {
-  font-family: var(--Raleway-font);
-  font-weight: var(--font-weight-light);
-  font-size: 26px;
-  line-height: 30px;
-  color: var(--color-primary);
-}
-
-.footer__logo__info {
-  font-family: var(--OpenSans-font);
-  font-size: 11px;
-  line-height: 15px;
-  color: var(--color-grey);
-}
-
-.footer__link1 {
-  background-image: url("../assets/Twitter.svg");
-  height: 24px;
-  width: 24px;
-}
-
-.footer__link2 {
-  background-image: url("../assets/Facebook.svg");
-  height: 24px;
-  width: 24px;
+  .footer__link1 {
+    background-image: url("../../assets/Twitter.svg");
+    height: 24px;
+    width: 24px;
+  }
+  .footer__link2 {
+    background-image: url("../../assets/Facebook.svg");
+    height: 24px;
+    width: 24px;
+  }
 }
